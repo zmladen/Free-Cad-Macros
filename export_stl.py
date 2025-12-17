@@ -193,9 +193,9 @@ def main():
             print(f"Body faces  : {body_ids}")
             
             # Export STL files
-            mesh_faces(body, faces, inlet_ids, "input", EXPORT_DIR,
+            mesh_faces(body, faces, inlet_ids, "inlet", EXPORT_DIR,
                        MESH_LINEAR_DEFLECTION, MESH_ANGULAR_DEFLECTION, MESH_RELATIVE)
-            mesh_faces(body, faces, outlet_ids, "output", EXPORT_DIR,
+            mesh_faces(body, faces, outlet_ids, "outlet", EXPORT_DIR,
                        MESH_LINEAR_DEFLECTION, MESH_ANGULAR_DEFLECTION, MESH_RELATIVE)
             mesh_faces(body, faces, body_ids, "body", EXPORT_DIR,
                        MESH_LINEAR_DEFLECTION, MESH_ANGULAR_DEFLECTION, MESH_RELATIVE)
